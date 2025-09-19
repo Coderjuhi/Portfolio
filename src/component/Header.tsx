@@ -14,7 +14,7 @@ const Header = () => {
 
   return (
     <header className="fixed top-0 w-full bg-gray-900/95 backdrop-blur-sm z-50 border-b border-gray-800">
-      <nav className="container mx-auto px-6 py-4">
+      <nav className="container mx-auto px-6 py-4 relative">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <button 
@@ -28,9 +28,9 @@ const Header = () => {
           <div className="hidden md:flex space-x-8">
             <button onClick={() => scrollToSection('#home')} className="text-gray-300 hover:text-white">Home</button>
             <button onClick={() => scrollToSection('#about')} className="text-gray-300 hover:text-white">About</button>
-            <button onClick={() => scrollToSection('#experience')} className="text-gray-300 hover:text-white">Experience</button>
+            <button onClick={() => scrollToSection('#education')} className="text-gray-300 hover:text-white">Experience</button>
             <button onClick={() => scrollToSection('#projects')} className="text-gray-300 hover:text-white">Projects</button>
-            <button onClick={() => scrollToSection('#Skills')} className="text-gray-300 hover:text-white">Skills</button>
+            <button onClick={() => scrollToSection('#skills')} className="text-gray-300 hover:text-white">Skills</button>
             <button onClick={() => scrollToSection('#contact')} className="text-gray-300 hover:text-white">Contact</button>
           </div>
 
@@ -43,15 +43,45 @@ const Header = () => {
           </button>
         </div>
 
-        {/* Mobile Menu */}
+        {/* Mobile Menu (Compact Top-Right) */}
         {isMenuOpen && (
-          <div className="md:hidden mt-4 bg-gray-800 rounded-lg p-4 space-y-2">
-            <button onClick={() => scrollToSection('#home')} className="block w-full text-left text-gray-300 hover:text-white">Home</button>
-            <button onClick={() => scrollToSection('#about')} className="block w-full text-left text-gray-300 hover:text-white">About</button>
-            <button onClick={() => scrollToSection('#experience')} className="block w-full text-left text-gray-300 hover:text-white">Experience</button>
-            <button onClick={() => scrollToSection('#projects')} className="block w-full text-left text-gray-300 hover:text-white">Projects</button>
-            <button onClick={() => scrollToSection('#skills')} className="block w-full text-left text-gray-300 hover:text-white">Skills</button>
-            <button onClick={() => scrollToSection('#contact')} className="block w-full text-left text-gray-300 hover:text-white">Contact</button>
+          <div className="md:hidden absolute top-16 right-4 bg-gray-800 rounded-lg p-2 w-48 space-y-1 shadow-lg z-50">
+            <button
+              onClick={() => scrollToSection('#home')}
+              className="block w-full text-left text-gray-300 hover:text-white px-4 py-2 rounded"
+            >
+              Home
+            </button>
+            <button
+              onClick={() => scrollToSection('#about')}
+              className="block w-full text-left text-gray-300 hover:text-white px-4 py-2 rounded"
+            >
+              About
+            </button>
+            <button
+              onClick={() => scrollToSection('#education')}
+              className="block w-full text-left text-gray-300 hover:text-white px-4 py-2 rounded"
+            >
+              Experience
+            </button>
+            <button
+              onClick={() => scrollToSection('#projects')}
+              className="block w-full text-left text-gray-300 hover:text-white px-4 py-2 rounded"
+            >
+              Projects
+            </button>
+            <button
+              onClick={() => scrollToSection('#skills')}
+              className="block w-full text-left text-gray-300 hover:text-white px-4 py-2 rounded"
+            >
+              Skills
+            </button>
+            <button
+              onClick={() => scrollToSection('#contact')}
+              className="block w-full text-left text-gray-300 hover:text-white px-4 py-2 rounded"
+            >
+              Contact
+            </button>
           </div>
         )}
       </nav>
