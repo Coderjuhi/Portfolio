@@ -339,6 +339,72 @@ const App = () => {
           </div>
         </section>
 
+        {/* skills */}
+        <section
+          id="skills"
+          className="bg-white rounded-2xl shadow-lg w-full min-h-[50vh] py-12 flex flex-col items-center"
+        >
+          <h1 className="text-4xl font-bold text-blue-400 mb-12">Skills</h1>
+
+          {/* Skills Grid */}
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8 px-6">
+            {/* C */}
+            <div className="bg-gray-100 p-6 rounded-xl shadow-md flex flex-col items-center justify-center hover:scale-105 hover:shadow-xl transition duration-300">
+              <img src="https://toppng.com/uploads/preview/c-programming-icon-c-programming-language-logo-11562945679duaxtn3yq0.png" alt="C" className="w-12 h-12" />
+              <p className="mt-3 text-lg font-semibold text-gray-700">C</p>
+            </div>
+
+            {/* Java */}
+            <div className="bg-gray-100 p-6 rounded-xl shadow-md flex flex-col items-center justify-center hover:scale-105 hover:shadow-xl transition duration-300">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" className="w-12 h-12" />
+              <p className="mt-3 text-lg font-semibold text-gray-700">Java</p>
+            </div>
+
+            {/* HTML */}
+            <div className="bg-gray-100 p-6 rounded-xl shadow-md flex flex-col items-center justify-center hover:scale-105 hover:shadow-xl transition duration-300">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" className="w-12 h-12" />
+              <p className="mt-3 text-lg font-semibold text-gray-700">HTML</p>
+            </div>
+
+            {/* CSS */}
+            <div className="bg-gray-100 p-6 rounded-xl shadow-md flex flex-col items-center justify-center hover:scale-105 hover:shadow-xl transition duration-300">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" className="w-12 h-12" />
+              <p className="mt-3 text-lg font-semibold text-gray-700">CSS</p>
+            </div>
+
+            {/* JavaScript */}
+            <div className="bg-gray-100 p-6 rounded-xl shadow-md flex flex-col items-center justify-center hover:scale-105 hover:shadow-xl transition duration-300">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" className="w-12 h-12" />
+              <p className="mt-3 text-lg font-semibold text-gray-700">JavaScript</p>
+            </div>
+
+            {/* React */}
+            <div className="bg-gray-100 p-6 rounded-xl shadow-md flex flex-col items-center justify-center hover:scale-105 hover:shadow-xl transition duration-300">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" className="w-12 h-12" />
+              <p className="mt-3 text-lg font-semibold text-gray-700">React</p>
+            </div>
+
+            {/* TailwindCSS */}
+            <div className="bg-gray-100 p-6 rounded-xl shadow-md flex flex-col items-center justify-center hover:scale-105 hover:shadow-xl transition duration-300">
+              <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="TailwindCSS" className="w-12 h-12" />
+              <p className="mt-3 text-lg font-semibold text-gray-700">TailwindCSS</p>
+            </div>
+
+            {/* GitHub */}
+            <div className="bg-gray-100 p-6 rounded-xl shadow-md flex flex-col items-center justify-center hover:scale-105 hover:shadow-xl transition duration-300">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                alt="GitHub"
+                className="w-12 h-12"
+              />
+              <p className="mt-3 text-lg font-semibold text-gray-700">GitHub</p>
+            </div>
+
+
+
+
+          </div>
+        </section>
 
 
 
