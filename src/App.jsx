@@ -142,7 +142,7 @@ const App = () => {
 
         <section
           id="education"
-          className="bg-white rounded-2xl shadow-lg w-full py-12 flex flex-col items-center"
+          className="bg-white rounded-2xl border border-gray-300 shadow-lg w-full py-12 flex flex-col items-center"
         >
           <h1 className="text-4xl font-bold text-blue-400 mb-12">My Education</h1>
 
@@ -213,7 +213,7 @@ const App = () => {
 
         <section
           id="projects"
-          className="bg-white rounded-2xl shadow-lg w-full min-h-[70vh] p-8 flex flex-col items-center gap-8"
+          className="bg-white rounded-2xl border border-gray-300  shadow-lg w-full min-h-[70vh] p-8 flex flex-col items-center gap-8"
         >
           <h1 className="text-4xl font-bold text-blue-400 mb-12">Projects</h1>
 
@@ -241,7 +241,7 @@ const App = () => {
 
               <div className="flex gap-4">
                 <a
-                  href="https://github.com/your-username/project1"
+                  href="https://github.com/Coderjuhi/LifeLink"
                   target="_blank"
                   className="bg-blue-500 text-white px-4 py-2 rounded flex items-center gap-2
                      hover:bg-blue-600 hover:scale-105 transition duration-300"
@@ -249,7 +249,7 @@ const App = () => {
                   <FaGithub /> Code
                 </a>
                 <a
-                  href="https://yourwebsite.com/project1"
+                  href="https://life-link-732l.vercel.app/"
                   target="_blank"
                   className="bg-green-500 text-white px-4 py-2 rounded flex items-center gap-2
                      hover:bg-green-600 hover:scale-105 transition duration-300"
@@ -281,7 +281,7 @@ const App = () => {
 
               <div className="flex gap-4">
                 <a
-                  href="https://github.com/Coderjuhi/beautyglow/tree/main/website"
+                  href="https://github.com/Coderjuhi/website"
                   target="_blank"
                   className="bg-blue-500 text-white px-4 py-2 rounded flex items-center gap-2
                      hover:bg-blue-600 hover:scale-105 transition duration-300"
@@ -289,7 +289,7 @@ const App = () => {
                   <FaGithub /> Code
                 </a>
                 <a
-                  href="https://yourwebsite.com/project2"
+                  href="https://coderjuhi.github.io/website/"
                   target="_blank"
                   className="bg-green-500 text-white px-4 py-2 rounded flex items-center gap-2
                      hover:bg-green-600 hover:scale-105 transition duration-300"
@@ -342,7 +342,7 @@ const App = () => {
         {/* skills */}
         <section
           id="skills"
-          className="bg-white rounded-2xl shadow-lg w-full min-h-[50vh] py-12 flex flex-col items-center"
+          className="bg-white rounded-2xl border border-gray-300  shadow-lg w-full min-h-[50vh] py-12 flex flex-col items-center"
         >
           <h1 className="text-4xl font-bold text-blue-400 mb-12">Skills</h1>
 
