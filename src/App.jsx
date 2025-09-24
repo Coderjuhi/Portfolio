@@ -147,12 +147,12 @@ const App = () => {
   <h1 className="text-4xl font-bold text-blue-400 mb-12">My Education</h1>
 
   <div className="relative w-full max-w-3xl">
-    {/* Vertical Line */}
+    {/* Vertical Line (only for md and above) */}
     <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gray-300 hidden md:block"></div>
 
     {/* College */}
     <div className="mb-12 flex flex-col md:flex-row md:justify-start w-full">
-      <div className="md:w-1/2 md:pr-8 flex flex-col items-center md:items-end order-2 md:order-1">
+      <div className="w-full md:w-1/2 md:pr-8 flex flex-col items-center md:items-end">
         <div className="bg-gray-100 p-6 rounded-xl shadow-md w-full hover:scale-105 transition">
           <h2 className="text-xl font-semibold text-purple-500">BCA College</h2>
           <p className="text-gray-600 mt-2">
@@ -161,23 +161,23 @@ const App = () => {
           </p>
         </div>
       </div>
-      <div className="relative flex justify-center md:block order-1 md:order-2 mb-4 md:mb-0">
+      <div className="relative flex justify-center md:block my-4 md:my-0">
         <div className="w-12 h-12 flex items-center justify-center bg-purple-500 text-white rounded-full border-4 border-white shadow-md">
           <GraduationCap size={24} />
         </div>
       </div>
-      <div className="md:w-1/2 hidden md:block"></div>
+      <div className="hidden md:block md:w-1/2"></div>
     </div>
 
     {/* 12th */}
     <div className="mb-12 flex flex-col md:flex-row md:justify-end w-full">
-      <div className="md:w-1/2 hidden md:block"></div>
-      <div className="relative flex justify-center md:block mb-4 md:mb-0">
+      <div className="hidden md:block md:w-1/2"></div>
+      <div className="relative flex justify-center md:block my-4 md:my-0">
         <div className="w-12 h-12 flex items-center justify-center bg-green-500 text-white rounded-full border-4 border-white shadow-md">
           <School size={24} />
         </div>
       </div>
-      <div className="md:w-1/2 md:pl-8 flex flex-col items-center md:items-start">
+      <div className="w-full md:w-1/2 md:pl-8 flex flex-col items-center md:items-start">
         <div className="bg-gray-100 p-6 rounded-xl shadow-md w-full hover:scale-105 transition">
           <h2 className="text-xl font-semibold text-green-500">12th Grade</h2>
           <p className="text-gray-600 mt-2">
@@ -189,7 +189,7 @@ const App = () => {
 
     {/* 10th */}
     <div className="mb-12 flex flex-col md:flex-row md:justify-start w-full">
-      <div className="md:w-1/2 md:pr-8 flex flex-col items-center md:items-end order-2 md:order-1">
+      <div className="w-full md:w-1/2 md:pr-8 flex flex-col items-center md:items-end">
         <div className="bg-gray-100 p-6 rounded-xl shadow-md w-full hover:scale-105 transition">
           <h2 className="text-xl font-semibold text-blue-500">10th Grade</h2>
           <p className="text-gray-600 mt-2">
@@ -197,15 +197,16 @@ const App = () => {
           </p>
         </div>
       </div>
-      <div className="relative flex justify-center md:block order-1 md:order-2 mb-4 md:mb-0">
+      <div className="relative flex justify-center md:block my-4 md:my-0">
         <div className="w-12 h-12 flex items-center justify-center bg-blue-500 text-white rounded-full border-4 border-white shadow-md">
           <School size={24} />
         </div>
       </div>
-      <div className="md:w-1/2 hidden md:block"></div>
+      <div className="hidden md:block md:w-1/2"></div>
     </div>
   </div>
 </section>
+
 
         {/* project */}
 
