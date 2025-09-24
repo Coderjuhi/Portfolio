@@ -141,73 +141,71 @@ const App = () => {
         {/* Experience */}
 
         <section
-          id="education"
-          className="bg-white rounded-2xl border border-gray-300 shadow-lg w-full py-12 flex flex-col items-center"
-        >
-          <h1 className="text-4xl font-bold text-blue-400 mb-12">My Education</h1>
+  id="education"
+  className="bg-white rounded-2xl border border-gray-300 shadow-lg w-full py-12 flex flex-col items-center"
+>
+  <h1 className="text-4xl font-bold text-blue-400 mb-12">My Education</h1>
 
-          <div className="relative w-full max-w-3xl">
+  <div className="relative w-full max-w-3xl">
+    {/* Vertical Line */}
+    <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gray-300 hidden md:block"></div>
 
-            {/* Vertical Line */}
-            <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gray-300"></div>
+    {/* College */}
+    <div className="mb-12 flex flex-col md:flex-row md:justify-start w-full">
+      <div className="md:w-1/2 md:pr-8 flex flex-col items-center md:items-end order-2 md:order-1">
+        <div className="bg-gray-100 p-6 rounded-xl shadow-md w-full hover:scale-105 transition">
+          <h2 className="text-xl font-semibold text-purple-500">BCA College</h2>
+          <p className="text-gray-600 mt-2">
+            Currently pursuing Bachelor of Computer Applications at
+            <span className="text-orange-400"> United Institute of Management</span>.
+          </p>
+        </div>
+      </div>
+      <div className="relative flex justify-center md:block order-1 md:order-2 mb-4 md:mb-0">
+        <div className="w-12 h-12 flex items-center justify-center bg-purple-500 text-white rounded-full border-4 border-white shadow-md">
+          <GraduationCap size={24} />
+        </div>
+      </div>
+      <div className="md:w-1/2 hidden md:block"></div>
+    </div>
 
-            {/* College */}
-            <div className="mb-12 flex justify-start w-full">
-              <div className="w-1/2 pr-8 flex flex-col items-end">
-                <div className="bg-gray-100 p-6 rounded-xl shadow-md w-full hover:scale-105 transition">
-                  <h2 className="text-xl font-semibold text-purple-500">BCA College</h2>
-                  <p className="text-gray-600 mt-2">
-                    Currently pursuing Bachelor of Computer Applications at
-                    <span className="text-orange-400"> United Institute of Management</span>.
-                  </p>
-                </div>
-              </div>
-              <div className="relative">
-                <div className="w-12 h-12 flex items-center justify-center bg-purple-500 text-white rounded-full border-4 border-white shadow-md absolute left-[-24px] top-2">
-                  <GraduationCap size={24} />
-                </div>
-              </div>
-              <div className="w-1/2"></div>
-            </div>
+    {/* 12th */}
+    <div className="mb-12 flex flex-col md:flex-row md:justify-end w-full">
+      <div className="md:w-1/2 hidden md:block"></div>
+      <div className="relative flex justify-center md:block mb-4 md:mb-0">
+        <div className="w-12 h-12 flex items-center justify-center bg-green-500 text-white rounded-full border-4 border-white shadow-md">
+          <School size={24} />
+        </div>
+      </div>
+      <div className="md:w-1/2 md:pl-8 flex flex-col items-center md:items-start">
+        <div className="bg-gray-100 p-6 rounded-xl shadow-md w-full hover:scale-105 transition">
+          <h2 className="text-xl font-semibold text-green-500">12th Grade</h2>
+          <p className="text-gray-600 mt-2">
+            Completed at KNBSS. Specialized in Math Science.
+          </p>
+        </div>
+      </div>
+    </div>
 
-            {/* 12th */}
-            <div className="mb-12 flex justify-end w-full">
-              <div className="w-1/2"></div>
-              <div className="relative">
-                <div className="w-12 h-12 flex items-center justify-center bg-green-500 text-white rounded-full border-4 border-white shadow-md absolute left-[-24px] top-2">
-                  <School size={24} />
-                </div>
-              </div>
-              <div className="w-1/2 pl-8 flex flex-col items-start">
-                <div className="bg-gray-100 p-6 rounded-xl shadow-md w-full hover:scale-105 transition">
-                  <h2 className="text-xl font-semibold text-green-500">12th Grade</h2>
-                  <p className="text-gray-600 mt-2">
-                    Completed at KNBSS. Specialized in Math Science.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            {/* 10th */}
-            <div className="mb-12 flex justify-start w-full">
-              <div className="w-1/2 pr-8 flex flex-col items-end">
-                <div className="bg-gray-100 p-6 rounded-xl shadow-md w-full hover:scale-105 transition">
-                  <h2 className="text-xl font-semibold text-blue-500">10th Grade</h2>
-                  <p className="text-gray-600 mt-2">
-                    Completed at KNBSS. Focused on Science & Mathematics.
-                  </p>
-                </div>
-              </div>
-              <div className="relative">
-                <div className="w-12 h-12 flex items-center justify-center bg-blue-500 text-white rounded-full border-4 border-white shadow-md absolute left-[-24px] top-2">
-                  <School size={24} />
-                </div>
-              </div>
-              <div className="w-1/2"></div>
-            </div>
-
-          </div>
-        </section>
+    {/* 10th */}
+    <div className="mb-12 flex flex-col md:flex-row md:justify-start w-full">
+      <div className="md:w-1/2 md:pr-8 flex flex-col items-center md:items-end order-2 md:order-1">
+        <div className="bg-gray-100 p-6 rounded-xl shadow-md w-full hover:scale-105 transition">
+          <h2 className="text-xl font-semibold text-blue-500">10th Grade</h2>
+          <p className="text-gray-600 mt-2">
+            Completed at KNBSS. Focused on Science & Mathematics.
+          </p>
+        </div>
+      </div>
+      <div className="relative flex justify-center md:block order-1 md:order-2 mb-4 md:mb-0">
+        <div className="w-12 h-12 flex items-center justify-center bg-blue-500 text-white rounded-full border-4 border-white shadow-md">
+          <School size={24} />
+        </div>
+      </div>
+      <div className="md:w-1/2 hidden md:block"></div>
+    </div>
+  </div>
+</section>
 
         {/* project */}
 
