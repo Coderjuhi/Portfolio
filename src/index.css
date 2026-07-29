@@ -1,2 +1,71 @@
 @import "tailwindcss";
 
+.rocket-engine {
+  position: relative;
+}
+
+/* Yellow glow behind engine */
+.rocket-engine::before {
+  content: "";
+  position: absolute;
+  left: -18px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 22px;
+  height: 22px;
+
+  border-radius: 999px;
+  background: #fde047;
+
+  filter: blur(12px);
+
+  animation: engineGlow 0.8s ease-in-out infinite alternate;
+}
+
+/* Fire trail */
+.rocket-engine::after {
+  content: "";
+  position: absolute;
+  left: -18px;
+  top: 75%;
+  transform: translateY(-50%);
+
+  width: 30px;
+  height: 12px;
+
+  border-radius: 999px;
+
+  background: linear-gradient(
+    to left,
+    #fff176,
+    #facc15,
+    #f97316,
+    transparent
+  );
+
+  filter: blur(3px);
+
+  animation: flameTrail 0.12s infinite alternate;
+}
+
+@keyframes engineGlow {
+  from {
+    opacity: 0.7;
+    transform: translateY(-50%) scale(1);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(-50%) scale(1.3);
+  }
+}
+
+@keyframes flameTrail {
+  from {
+    width: 24px;
+    opacity: 0.7;
+  }
+  to {
+    width: 38px;
+    opacity: 1;
+  }
+}

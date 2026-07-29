@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import Header from "./component/Header";
 import { Rocket, Mail } from "lucide-react";
 import { FaLinkedin } from "react-icons/fa6";
@@ -9,8 +9,16 @@ import { GraduationCap, School } from "lucide-react";
 
 
 
+function App() {
+  const images = [
+    "/juhi.jpeg",
+    "/img1.jpeg"
+  ];
+  const [index, setIndex] = useState(0);
+  const changeImage = () => {
+    setIndex((index+1) % images.length);
+  };
 
-const App = () => {
   return (
     <>
       {/* Navbar */}
@@ -28,7 +36,21 @@ const App = () => {
           <div className="flex flex-col items-start justify-center gap-3 md:w-1/2 md:pl-8 md:translate-x-4 transition-all duration-700 ease-out hover:translate-x-1">
             <h1 className="text-5xl font-bold text-blue-400 flex items-center gap-3">
               Hi, I'm Juhi Gupta
-              <Rocket size={40} className="text-blue-400" />
+              <div className="relative inline-flex items-center rocket-engine">
+                <Rocket
+                  size={40}
+                  className="
+      text-cyan-400
+      animate-float
+      transition-all
+      duration-300
+      hover:scale-110
+      hover:rotate-12
+      drop-shadow-[0_0_20px_rgba(34,211,238,0.8)]
+      relative z-10   "
+                />
+              </div>
+
             </h1>
             <p className="text-gray-900 text-lg">Web Developer</p>
             <p className="text-gray-600 text-lg">
@@ -112,9 +134,10 @@ const App = () => {
           {/* Left Image */}
           <div className="md:w-1/2 flex justify-center md:justify-center">
             <img
-              src="/juhi.jpeg"
+              src={images[index]}
+              onClick={changeImage}
               alt="Juhi Gupta"
-              className="rounded-full w-72 h-72 object-cover shadow-lg transition-transform duration-500 ease-out hover:scale-105"
+              className=" cursor-pointer rounded-full w-72 h-72 object-cover shadow-lg transition-transform duration-500 ease-out hover:scale-105"
             />
           </div>
 
