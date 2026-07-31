@@ -9,7 +9,7 @@ import {
   FaJava,
   FaNodeJs
 } from "react-icons/fa";
-import { MapPin ,Dot} from "lucide-react";
+import { MapPin, Dot } from "lucide-react";
 import { SiGithub, SiMongodb, SiPostman, SiSelenium } from "react-icons/si";
 import ProfileCard from "./ProfileCard";
 import FloatingBadge from "./FloatingBadge";
@@ -18,7 +18,7 @@ const Home = () => {
   return (
     <section
       id="home"
-      className="relative min-h-screen overflow-hidden bg-gradient-to-br from-white via-slate-50 to-blue-100"
+      className="relative h-[52rem] overflow-hidden bg-gradient-to-br from-white via-slate-50 to-blue-100"
     >
       {/* Blur Background */}
       <div className="absolute -left-32 top-20 h-80 w-80 rounded-full bg-blue-300 blur-[150px] opacity-40"></div>
@@ -36,7 +36,7 @@ const Home = () => {
         >
 
           <span className="inline-flex font-semibold px-2 py-1 rounded-full bg-white/60 backdrop-blur-lg border border-gray-300 text-blue-400 text-sm">
-           <Dot /> OPEN TO OPPORTUNITIES
+            <Dot /> OPEN TO OPPORTUNITIES
           </span>
 
           <h1 className="mt-8 text-6xl font-black leading-tight">
@@ -109,7 +109,7 @@ const Home = () => {
             </a>
 
             <p className="text-slate-500 flex gap-2">
-           <MapPin /> Based in Noida, India
+              <MapPin /> Based in Noida, India
             </p>
 
           </div>
@@ -123,16 +123,17 @@ const Home = () => {
             text="React"
             icon={FaReact}
             className="top-5 left-5"
-            animate={{x:[0,15,0],}}
+            animate={{ x: [0, 15, 0], }}
           />
 
           <FloatingBadge
             text="Java"
             icon={FaJava}
             className="top-14 right-28"
-           animate={{x:[0,0,0],
-                     y:[0,20,0]
-           }}
+            animate={{
+              x: [0, 0, 0],
+              y: [0, 20, 0]
+            }}
 
           />
 
@@ -140,9 +141,10 @@ const Home = () => {
             text="Node"
             icon={FaNodeJs}
             className="right-0 top-52"
-         animate={{x:[0,10,0],
-                   y:[0,-10,0],
-         }}
+            animate={{
+              x: [0, 10, 0],
+              y: [0, -10, 0],
+            }}
 
           />
 
@@ -150,20 +152,21 @@ const Home = () => {
             text="MongoDB"
             icon={SiMongodb}
             className="left-0 bottom-40"
-          animate={{
-   x:[0,8,0],
-   y:[0,-8,0],
+            animate={{
+              x: [0, 8, 0],
+              y: [0, -8, 0],
 
-}}
+            }}
           />
 
           <FloatingBadge
             text="Postman"
             icon={SiPostman}
             className="right-2 bottom-36"
-            animate={{x:[0,10,0],
-                   y:[0,-10,0],
-         }}
+            animate={{
+              x: [0, 10, 0],
+              y: [0, -10, 0],
+            }}
           />
 
           <FloatingBadge
@@ -171,17 +174,18 @@ const Home = () => {
             icon={SiSelenium}
             className="bottom-6 right-24"
             animate={{
- x:[0,20,0],
- y:[0,20,0]
-}}
+              x: [0, 20, 0],
+              y: [0, 20, 0]
+            }}
           />
           <FloatingBadge
             text="GitHub"
             icon={SiGithub}
             className="top-52 left-20"
-            animate={{x:[0,10,0],
-                   y:[0,-20,0],
-         }}
+            animate={{
+              x: [0, 10, 0],
+              y: [0, -20, 0],
+            }}
           />
 
           <ProfileCard />

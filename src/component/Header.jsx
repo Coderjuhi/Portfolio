@@ -25,9 +25,9 @@ useEffect(() => {
   }`}
 > 
  <nav
-  className={`max-w-7xl mx-auto px-6 py-4 transition-all ease-in-out duration-500 ${
+  className={`max-w-7xl mx-auto px-4 py-3 transition-all ease-in-out duration-500 ${
     scrolled
-      ? "rounded-2xl bg-transparent border border-white/50 shadow-xl backdrop-blur-xl"
+      ? "rounded-full bg-transparent border border-white/50 shadow-xl backdrop-blur-xl"
       : "bg-transparent border-transparent shadow-none rounded-none"
   }`}
 >
@@ -40,8 +40,10 @@ useEffect(() => {
           </h3>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex space-x-8  ">
+          <div className="hidden md:flex space-x-4 ">
             <button onClick={() => scrollToSection("#about")} className="px-4 py-2 rounded-full text-gray-600   hover:bg-blue-100 hover:text-blue-300 hover:shadow-lg hover:shadow-blue-300/40"> About </button>
+            <button onClick={() => scrollToSection("#about")} className="px-4 py-2 rounded-full text-gray-600   hover:bg-blue-100 hover:text-blue-300 hover:shadow-lg hover:shadow-blue-300/40"> Education </button>
+            <button onClick={() => scrollToSection("#about")} className="px-4 py-2 rounded-full text-gray-600   hover:bg-blue-100 hover:text-blue-300 hover:shadow-lg hover:shadow-blue-300/40"> Skills </button>
             <button onClick={() => scrollToSection('#education')} className="px-4 py-2 rounded-full text-gray-600   hover:bg-blue-100 hover:text-blue-300 hover:shadow-lg hover:shadow-blue-300/40">Services</button>
             <button onClick={() => scrollToSection('#projects')} className="px-4 py-2 rounded-full text-gray-600   hover:bg-blue-100 hover:text-blue-300 hover:shadow-lg hover:shadow-blue-300/40">Projects</button>
             <button onClick={() => scrollToSection('#projects')} className="px-4 py-2 rounded-full text-gray-600   hover:bg-blue-100 hover:text-blue-300 hover:shadow-lg hover:shadow-blue-300/40">Workflow</button>
