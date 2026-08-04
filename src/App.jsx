@@ -3,6 +3,7 @@ import Header from "./component/Header";
 import Home from "./component/Home";
 import About from "./component/About";
 import Education from "./component/Education";
+import Skills from "./component/Skills";
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
      <Home/>
  <About/>
  <Education/>
+ <Skills/>
     </>
   );
 };

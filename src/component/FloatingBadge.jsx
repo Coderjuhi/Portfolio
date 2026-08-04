@@ -1,7 +1,5 @@
 import { animate, motion } from "framer-motion";
 
-
-
 const FloatingBadge = ({ text, icon: Icon, className,animate }) => {
     return (
         <motion.div

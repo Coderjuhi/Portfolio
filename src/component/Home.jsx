@@ -62,9 +62,7 @@ const Home = () => {
               speed={40}
               repeat={Infinity}
             />
-
           </div>
-
           <p className="mt-8 text-lg text-slate-600 leading-8 max-w-xl">
             Passionate BCA graduate specializing in MERN Stack Development,
             Java, and Software Testing. I love creating beautiful,

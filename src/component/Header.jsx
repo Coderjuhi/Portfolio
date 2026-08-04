@@ -65,41 +65,48 @@ useEffect(() => {
         </div>
 
         {/* Mobile Menu (Compact Top-Right) */}
-        {isMenuOpen && (
-          <div className="md:hidden absolute top-16 right-4 bg-gray-800 rounded-lg p-2 w-48 space-y-1 shadow-lg z-50">
-            <button
-              onClick={() => scrollToSection('#home')}
-              className="block w-full text-left text-gray-300 hover:text-white px-4 py-2 rounded"
-            >
-              Home
-            </button>
+        {isMenuOpen &&  (
+          <div className="md:hidden absolute top-16 right-4 bg-transparent backdrop-blur-xl  rounded-lg p-2 w-100 space-y-1 shadow-xl">
+         
             <button
               onClick={() => scrollToSection('#about')}
-              className="block w-full text-left text-gray-300 hover:text-white px-4 py-2 rounded"
+              className="block w-full text-left text-gray-600  hover:text-white px-4 py-2 rounded"
             >
               About
             </button>
             <button
               onClick={() => scrollToSection('#education')}
-              className="block w-full text-left text-gray-300 hover:text-white px-4 py-2 rounded"
+              className="block w-full text-left text-gray-600 hover:text-white px-4 py-2 rounded"
             >
-              Experience
+              Education
             </button>
             <button
-              onClick={() => scrollToSection('#projects')}
-              className="block w-full text-left text-gray-300 hover:text-white px-4 py-2 rounded"
-            >
-              Projects
-            </button>
-            <button
-              onClick={() => scrollToSection('#skills')}
-              className="block w-full text-left text-gray-300 hover:text-white px-4 py-2 rounded"
+              onClick={() => scrollToSection('#skilss')}
+              className="block w-full text-left text-gray-600 hover:text-white px-4 py-2 rounded"
             >
               Skills
             </button>
             <button
+              onClick={() => scrollToSection('#skills')}
+              className="block w-full text-left text-gray-600 hover:text-white px-4 py-2 rounded"
+            >
+              Services
+            </button> 
+             <button
+              onClick={() => scrollToSection('#skills')}
+              className="block w-full text-left text-gray-600 hover:text-white px-4 py-2 rounded"
+            >
+            Projects
+            </button>  
+            <button
+              onClick={() => scrollToSection('#skills')}
+              className="block w-full text-left text-gray-600 hover:text-white px-4 py-2 rounded"
+            >
+              Workflows
+            </button>
+            <button
               onClick={() => scrollToSection('#contact')}
-              className="block w-full text-left text-gray-300 hover:text-white px-4 py-2 rounded"
+              className="block w-full text-left text-gray-600 hover:text-white px-4 py-2 rounded"
             >
               Contact
             </button>
