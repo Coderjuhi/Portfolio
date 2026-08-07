@@ -46,7 +46,7 @@ const Education = () => {
             <div className="absolute left-5 top-0 h-full w-[2px] bg-blue-200 "></div>
 
             <div className="space-y-14">
-              {education.map((item, index) => (
+              {education.map((item) => (
 
                 <div className="relative flex items-center  overflow-hidden
               transition-all
@@ -54,11 +54,11 @@ const Education = () => {
               hover:-translate-y-3">
 
                   {/* Timeline Icon */}
-                  <div className="absolute left-0 z-10 flex h-10 w-10 items-center justify-center rounded-full bg-blue-500 text-white shadow-lg">
+                  <div className="absolute left-0 z-10 flex h-8 w-8 items-center justify-center rounded-full bg-blue-500 text-white shadow-lg">
                     <GraduationCap size={18} />
                   </div>
 
-                  <div className="ml-16 flex w-full justify-between rounded-2xl border border-white/50 bg-white p-7 shadow-lg">
+                  <div className="ml-16 flex w-full justify-between rounded-2xl border border-gray-100 bg-gradient-to-br from-blue-50 via-white to-blue-50 p-5 shadow-lg">
                     <div>
                       <h1 className="text-xl font-semibold text-black">
                         {item.degree}

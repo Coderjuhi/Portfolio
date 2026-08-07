@@ -12,42 +12,36 @@ const skillCards = [
     {
         id: 1,
         title: "Programming",
-        percentage: "82%",
         icon: Code2,
         skills: ["Java", "SQL"],
     },
     {
         id: 2,
         title: "Frontend",
-        percentage: "90%",
         icon: Monitor,
         skills: ["HTML", "CSS", "JavaScript", "React.js", "Tailwind CSS"],
     },
     {
         id: 3,
         title: "Backend",
-        percentage: "84%",
         icon: Server,
         skills: ["Node.js", "Express.js"],
     },
     {
         id: 4,
         title: "Database",
-        percentage: "80%",
         icon: Database,
         skills: ["MongoDB", "MySQL"],
     },
     {
         id: 5,
         title: "Testing",
-        percentage: "88%",
         icon: Bug,
         skills: ["Selenium", "Postman", "JMeter", "Jira", "TestNG"],
     },
     {
         id: 6,
         title: "Tools",
-        percentage: "86%",
         icon: Wrench,
         skills: ["Git", "GitHub", "VS Code"],
     },
@@ -87,8 +81,8 @@ export default function Skills() {
                 <div className="max-w-7xl mx-auto px-8 pt-20 items-center">
 
                     <span className="inline-block px-2 py-1 font-semibold rounded-full bg-white/60 backdrop-blur-lg border border-gray-300 text-blue-500 text-sm tracking-widest shadow">
-                        Skills
-                    </span>
+                        Skills                                                      
+                    </span>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
                     <h1 className="mt-5 text-5xl text-black font-bold max-w-2xl">Development and quality, side by side</h1>
                     <p className="mt-5  text-gray-400  max-w-2xl">A toolkit that spans the full MERN stack plus the manual and automation testing stack used to validate it.</p>
 
@@ -107,10 +101,10 @@ export default function Skills() {
                     {/* Bottom Cards */}
                     <div className="mt-10 grid gap-8 lg:grid-cols-3">
                         {/* Testing Expertise */}
-                        <div className="rounded-3xl border border-gray-200 bg-white p-8 shadow-lg lg:col-span-2">
+                        <div className="rounded-3xl border border-gray-200 bg-gradient-to-br from-blue-50 via-white to-blue-50 p-6 shadow-lg lg:col-span-2">
                             <div className="mb-6 flex items-center gap-2">
                                 <BookOpen className="text-blue-600" />
-                                <h2 className="text-2xl font-semibold">
+                                <h2 className="text-xl font-semibold">
                                     Testing Expertise
                                 </h2>
                             </div>
@@ -122,22 +116,22 @@ export default function Skills() {
                                         className="flex items-center gap-3"
                                     >
                                         <CheckCircle
-                                            size={18}
+                                            size={16}
                                             className="text-blue-600"
                                         />
 
-                                        <span className="text-gray-700">{item}</span>
+                                        <span className="text-gray-700 ">{item}</span>
                                     </div>
                                 ))}
                             </div>
                         </div>
 
                         {/* Soft Skills */}
-                        <div className="rounded-3xl border border-gray-200 bg-white p-8 shadow-lg">
+                        <div className="rounded-3xl border border-gray-200 bg-gradient-to-br from-blue-50 via-white to-blue-50 p-6 shadow-lg">
                             <div className="mb-6 flex items-center gap-2">
                                 <Database className="text-blue-600" />
 
-                                <h2 className="text-2xl font-semibold">
+                                <h2 className="text-xl font-semibold">
                                     ERP & Soft Skills
                                 </h2>
                             </div>
@@ -146,7 +140,7 @@ export default function Skills() {
                                 {softSkills.map((item) => (
                                     <span
                                         key={item}
-                                        className="rounded-full border border-gray-200 bg-gray-50 px-4 py-2"
+                                        className="rounded-full border border-gray-200 bg-gray-50 px-4 py-2 text-sm"
                                     >
                                         {item}
                                     </span>
