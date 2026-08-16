@@ -8,7 +8,7 @@ export default function Project() {
             title: "LifeLink",
             category: "Development",
             description: "Blood & Organ Donation Management Platform",
-            image: "public/Lifelink.png",
+            image: "/LifeLink.png",
             technologies: [
                 "React.js",
                 "Node.js",
