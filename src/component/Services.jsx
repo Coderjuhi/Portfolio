@@ -69,7 +69,7 @@ export default function Services() {
                                 <div className="absolute -top-10 -right-10 h-28 w-28 rounded-full bg-blue-100 blur-3xl opacity-0 transition-opacity duration-500 group-hover:opacity-100"></div>
 
                                 <div className=" mb-6 flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-r from-blue-500 to-sky-500 text-white transition-transform duration-500 group-hover:rotate-6 group-hover:scale-110 " >            
-                                                            <Icon/>
+                                <Icon/>
                                 </div>
                                 <div >
                                     <h3 className="mb-3 text-xl font-semibold text-slate-900">{title}</h3>
