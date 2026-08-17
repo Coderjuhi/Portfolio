@@ -32,7 +32,7 @@ export default function Services() {
     return (
         <>
             <section
-                id="education"
+                id="services"
                 className="relative min-h-[45rem] overflow-hidden bg-gradient-to-br from-white via-slate-50 to-blue-100"
             >
                 {/* Blur Background */}
@@ -40,12 +40,12 @@ export default function Services() {
 
                 <div className="absolute right-0 bottom-0 h-96 w-96 rounded-full bg-sky-200 blur-[170px] opacity-40"></div>
 
-                <div className="max-w-7xl mx-auto px-8 pt-20 items-center">
+  <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-20">
 
-                    <span className="inline-block px-2 py-1 font-semibold rounded-full bg-white/60 backdrop-blur-lg border border-gray-300 text-blue-500 text-sm tracking-widest shadow">
+                    <span className="inline-block px-2 py-1 font-semibold rounded-full bg-white/60 backdrop-blur-lg border border-gray-300 text-blue-500 text-xs tracking-widest shadow">
                         Services
                     </span>
-                    <h1 className="mt-5 text-5xl text-black font-bold max-w-2xl">What I can do for your team</h1>
+                    <h1 className="mt-5 text-4xl  md:text-5xl text-black font-bold max-w-2xl">What I can do for your team</h1>
                     <p className="mt-5  text-gray-400  max-w-xl">Three ways I contribute from day one — shipping features, crafting interfaces, and guarding quality.</p>
 
                     <div className="grid lg:grid-cols-3 gap-8 mt-6">

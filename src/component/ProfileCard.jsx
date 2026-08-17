@@ -24,14 +24,12 @@ const ProfileCard = () => {
       initial={{ opacity: 0, x: 80 }}
       animate={{ opacity: 1, x: 0 }}
       transition={{ duration: 1 }}
-      className="w-[430px] rounded-[40px] border border-white/40 bg-white/35 backdrop-blur shadow-2xl p-8"
-    >
+className="w-full max-w-[400px] mx-auto rounded-[30px] border border-white/40 bg-white/35 backdrop-blur-xl shadow-2xl mt-4 p-4"    >
       {/* Profile Image */}
 
       <div className="flex justify-center">
         <div className="relative">
-          <div className="h-64 w-64 rounded-full overflow-hidden border-[6px] border-white shadow-xl">
-            <img
+<div className="h-48 w-48 sm:h-60 sm:w-60 rounded-full overflow-hidden border-[6px] border-white shadow-xl">            <img
               src="/profile.jpeg"
               alt="Juhi Gupta"
               className="h-full w-full object-cover"
@@ -65,8 +63,7 @@ const ProfileCard = () => {
               scale: 1.05,
             }}
             key={item.title}
-            className="rounded-3xl bg-white/70 p-6 shadow-md "
-          >
+className="rounded-3xl bg-white/70 p-4 sm:p-6 shadow-md"          >
             <h3 className=" font-bold text-blue-600 text-xl">
               {item.number}
             </h3>

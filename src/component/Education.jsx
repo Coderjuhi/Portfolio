@@ -25,19 +25,19 @@ const Education = () => {
     <>
       <section
         id="education"
-        className="relative min-h-[50rem] overflow-hidden bg-gradient-to-br from-white via-slate-50 to-blue-100"
+        className="relative min-h-[50rem] overflow-hidden "
       >
         {/* Blur Background */}
         <div className="absolute -left-32 top-20 h-80 w-80 rounded-full bg-blue-300 blur-[150px] opacity-40"></div>
 
         <div className="absolute right-0 bottom-0 h-96 w-96 rounded-full bg-sky-200 blur-[170px] opacity-40"></div>
 
-        <div className="max-w-7xl mx-auto px-8 pt-20 items-center">
+  <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-20">
 
-          <span className="inline-block px-2 py-1 font-semibold rounded-full bg-white/60 backdrop-blur-lg border border-gray-300 text-blue-500 text-sm tracking-widest shadow">
+          <span className="inline-block px-2 py-1 font-semibold rounded-full bg-white/60 backdrop-blur-lg border border-gray-300 text-blue-500 text-xs tracking-widest shadow">
             EDUCATION
           </span>
-          <h1 className="mt-5 text-5xl text-black font-bold max-w-2xl">A consistent academic foundation</h1>
+          <h1 className="mt-5  text-4xl  md:text-5xl text-black font-bold max-w-2xl">A consistent academic foundation</h1>
           <p className="mt-5  text-gray-400  max-w-2xl">Strong fundamentals in computer applications, mathematics, and problem solving.</p>
 
           <div className="relative mt-7">
@@ -68,7 +68,7 @@ const Education = () => {
                       </p>
                     </div>
 
-                    <div className="text-3xl font-bold text-blue-600">
+                    <div className="text-2xl font-bold text-blue-600">
                       {item.score}
                     </div>
                   </div>

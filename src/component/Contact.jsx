@@ -528,7 +528,7 @@ export default function Contact() {
           <div className="flex gap-3">
 
             <a
-              href="https://github.com/Coderjuhi"
+              href=""
               target="_blank"
               rel="noopener noreferrer"
               className="

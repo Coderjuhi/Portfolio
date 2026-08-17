@@ -8,7 +8,7 @@ export default function Project() {
             title: "LifeLink",
             category: "Development",
             description: "Blood & Organ Donation Management Platform",
-            image: "/Lifelink.png",
+            image: "/LifeLink.png",
             technologies: [
                 "React.js",
                 "Node.js",
@@ -130,7 +130,7 @@ export default function Project() {
     return (
         <>
             <section
-                id="education"
+                id="projects"
                 className="relative min-h-[55rem] overflow-hidden bg-gradient-to-br from-white via-slate-50 to-blue-100"
             >
                 {/* Blur Background */}
@@ -138,12 +138,12 @@ export default function Project() {
 
                 <div className="absolute right-0 bottom-0 h-96 w-96 rounded-full bg-sky-200 blur-[170px] opacity-40"></div>
 
-                <div className="max-w-7xl mx-auto px-8 pt-20 items-center">
+  <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-20">
 
-                    <span className="inline-block px-2 py-1 font-semibold rounded-full bg-white/60 backdrop-blur-lg border border-gray-300 text-blue-500 text-sm tracking-widest shadow">
+                    <span className="inline-block px-2 py-1 font-semibold rounded-full bg-white/60 backdrop-blur-lg border border-gray-300 text-blue-500 text-sm tracking-[0.2em] shadow">
                         Featured Projects
                     </span>
-                    <h1 className="mt-5 text-5xl text-black font-bold max-w-2xl">Applications built, tested, and validated</h1>
+                    <h1 className="mt-5 text-4xl  md:text-5xl text-black font-bold max-w-2xl">Applications built, tested, and validated</h1>
                     <p className="mt-5  text-gray-400  max-w-xl">Every project below was developed end-to-end and verified with functional, API, and regression testing.</p>
                     {/* FILTER BUTTONS */}
                     <div className="mt-8 flex gap-3 mb-10">
