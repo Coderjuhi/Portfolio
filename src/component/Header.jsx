@@ -16,11 +16,10 @@ const scrollToSection = (id) => {
   }
 };
   return (
-    <header className="fixed top-0 left-1/2 -translate-x-1/2 z-50 w-[92%]">
-      <nav className="max-w-7xl mx-auto px-4 py-3">
-
-           <div className="flex items-center justify-between ">
-          {/* Logo */}
+<header className="fixed top-0 left-1/2 -translate-x-1/2 z-50 w-[94%] max-w-7xl">
+<nav className="relative w-full px-3 sm:px-4 py-3">
+<div className="flex items-center justify-between gap-3">   
+         {/* Logo */}
           <h3
             className="text-xl font-bold text-black"
           >
@@ -48,7 +47,7 @@ const scrollToSection = (id) => {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="md:hidden text-gray-300"
+  className="md:hidden shrink-0 text-gray-700"
           >
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -56,8 +55,7 @@ const scrollToSection = (id) => {
 
         {/* Mobile Menu (Compact Top-Right) */}
         {isMenuOpen &&  (
-          <div className="md:hidden absolute top-16 right-4 bg-transparent backdrop-blur-xl  rounded-lg p-2 w-100 space-y-1 shadow-xl">
-         
+<div className="md:hidden absolute top-16 right-0 w-48 max-w-[calc(100vw-2rem)] bg-white/80 backdrop-blur-xl rounded-2xl p-2 space-y-1 shadow-xl">         
             <button
               onClick={() => scrollToSection('#about')}
               className="block w-full text-left text-gray-600  hover:text-white px-4 py-2 rounded"

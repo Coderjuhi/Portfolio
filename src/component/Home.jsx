@@ -122,14 +122,14 @@ const Home = () => {
             <FloatingBadge
               text="React"
               icon={FaReact}
-              className="top-5 left-5"
+              className="hidden md:block top-5 left-5"
               animate={{ x: [0, 15, 0], }}
             />
 
             <FloatingBadge
               text="Java"
               icon={FaJava}
-              className="top-14 right-28"
+              className="hidden md:block top-14 right-28"
               animate={{
                 x: [0, 0, 0],
                 y: [0, 20, 0]
@@ -140,7 +140,7 @@ const Home = () => {
             <FloatingBadge
               text="Node"
               icon={FaNodeJs}
-              className="right-0 top-52"
+              className="hidden md:block right-0 top-52"
               animate={{
                 x: [0, 10, 0],
                 y: [0, -10, 0],
@@ -151,7 +151,7 @@ const Home = () => {
             <FloatingBadge
               text="MongoDB"
               icon={SiMongodb}
-              className="left-0 bottom-40"
+              className="hidden md:block left-0 bottom-40"
               animate={{
                 x: [0, 8, 0],
                 y: [0, -8, 0],
@@ -162,7 +162,7 @@ const Home = () => {
             <FloatingBadge
               text="Postman"
               icon={SiPostman}
-              className="right-2 bottom-36"
+              className="hidden md:block right-2 bottom-36"
               animate={{
                 x: [0, 10, 0],
                 y: [0, -10, 0],
@@ -172,7 +172,7 @@ const Home = () => {
             <FloatingBadge
               text="Selenium"
               icon={SiSelenium}
-              className="bottom-6 right-24"
+              className="hidden md:block bottom-6 right-24"
               animate={{
                 x: [0, 20, 0],
                 y: [0, 20, 0]
@@ -181,7 +181,7 @@ const Home = () => {
             <FloatingBadge
               text="GitHub"
               icon={SiGithub}
-              className="top-52 left-20"
+              className="hidden md:block top-52 left-20"
               animate={{
                 x: [0, 10, 0],
                 y: [0, -20, 0],
